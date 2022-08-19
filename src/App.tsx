@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import VisualEffectsGrid from './VisualEffectsGrid/VisualEffectsGrid';
+import styled, {createGlobalStyle} from "styled-components";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Wrapper>
+            <GlobalStyles/>
+            <VisualEffectsGrid/>
+        </Wrapper>
+    );
 }
 
 export default App;
+
+const Wrapper = styled.div`
+min-height: 100%;
+margin: 64px;
+`;
+
+const GlobalStyles = createGlobalStyle`
+html, body {
+
+width: 100%;
+
+--background: #0f0e17;
+--primary: #ff8906;
+--text: #fffffe;
+--gray: #a7a9be;
+--secondary:#e53170;
+
+background: var(--background);
+color: var(--text);
+
+}
+`;
