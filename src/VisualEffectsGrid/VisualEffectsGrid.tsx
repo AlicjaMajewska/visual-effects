@@ -11,6 +11,8 @@ import ButtonWith3DimensionalEffect from "../effects/ButtonWith3DimensionalEffec
 import DarkGlassesOverView from "../effects/DarkGlassesOverView/DarkGlassesOverView";
 import CorrectionGlassesOverText from "../effects/CorrectionGlassesOverText/CorrectionGlassesOverText";
 import HorizontalGalleryWithScrollSnapping from '../effects/HorizontalGalleryWithScrollSnapping/HorizontalGalleryWithScrollSnapping';
+import HorizontalGalleryWithScrollSnappingOnCenter
+    from "../effects/HorizontalGalleryWithScrollSnappingOnCenter/HorizontalGalleryWithScrollSnappingOnCenter";
 
 export type VisualEffectsGridProps = {}
 
@@ -30,5 +32,6 @@ export default function VisualEffectsGrid({}: VisualEffectsGridProps) {
             <DarkGlassesOverView/>
             <CorrectionGlassesOverText/>
             <HorizontalGalleryWithScrollSnapping/>
+            <HorizontalGalleryWithScrollSnappingOnCenter/>
         </Grid>);
 }
