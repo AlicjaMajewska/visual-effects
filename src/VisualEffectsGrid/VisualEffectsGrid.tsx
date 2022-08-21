@@ -13,6 +13,7 @@ import CorrectionGlassesOverText from "../effects/CorrectionGlassesOverText/Corr
 import HorizontalGalleryWithScrollSnapping from '../effects/HorizontalGalleryWithScrollSnapping/HorizontalGalleryWithScrollSnapping';
 import HorizontalGalleryWithScrollSnappingOnCenter
     from "../effects/HorizontalGalleryWithScrollSnappingOnCenter/HorizontalGalleryWithScrollSnappingOnCenter";
+import ClipPathAnimation from '../effects/ClipPathAnimation/ClipPathAnimation';
 
 export type VisualEffectsGridProps = {}
 
@@ -33,5 +34,6 @@ export default function VisualEffectsGrid({}: VisualEffectsGridProps) {
             <CorrectionGlassesOverText/>
             <HorizontalGalleryWithScrollSnapping/>
             <HorizontalGalleryWithScrollSnappingOnCenter/>
+            <ClipPathAnimation/>
         </Grid>);
 }
